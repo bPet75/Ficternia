@@ -1,0 +1,30 @@
+.hide{
+    display:none;
+}
+.gridContainer{
+    display:grid;
+    gap:2em;
+    grid-template-columns: repeat(2, 0.5fr);
+    padding-inline: 6.5vw;
+    width:85vw;
+}
+.formInput{
+    width:30vw;
+    height:50px;
+}
+.formInputElement{
+    width:60vw;
+}
+.imageContainer{
+    width:20vw;
+    height:55vh;
+    border: 1px solid black;
+}
+.locationFormElement:nth-child(4){
+    grid-column:2;
+    grid-row-start: 1;
+    grid-row-end:5;
+}
+.labelWidth{
+    width:30vw;
+}

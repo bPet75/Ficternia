@@ -1,0 +1,240 @@
+.linkColorRemove{
+    color: black;
+    text-decoration: none;
+}
+.linkColorRemove:hover{
+    color: black;
+}
+.siteBcColor{
+    background-color: var(--mainBcgColor);
+}
+.gridRow{
+    display:grid;
+    grid-auto-flow: row;
+}
+.gridTwoCol{
+    display:grid;
+    grid-template-columns: repeat(2, 50%);
+}
+.searchBarContainer{
+    margin: 0 auto;
+}
+.searchFilters{
+    position:absolute;
+    z-index: 1;
+    outline: 3px dotted red;
+    width:450px;
+    height:200px;
+    left: 50%;
+    top:100%;
+    background-color: black;
+}
+.filtersInnerContainer{
+    display:grid;
+    
+}
+.filters{
+    display:grid;
+    grid-template-columns: repeat(2,48%);
+    margin:auto;
+
+}
+.pageContainer{
+    min-height:80vh;
+    max-width: 98vw;
+    margin:0 1vw;
+    display:grid;
+    grid-auto-flow: row;
+}
+.splitPageContainer{
+    display:grid;
+    gap:1rem;
+    min-height:40rem;
+    grid-template-columns: 30% 70%;
+}
+.titleContainer{
+    display:grid;
+    height: 7rem;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    font-weight: bold;
+    font-size:xx-large;
+}
+.titleContainer:has(.small){
+ height: 2rem !important;
+}
+.title.small{
+    font-size: large;
+}
+.infoContainer{
+    display:grid;
+    grid-auto-flow: row;   
+    background-color: var(--elementBcg);
+    border-radius: 20px;
+}
+.imageAndMetaContainer{
+    display:grid;
+    grid-template-columns: 45% 55%;
+    margin: 1rem 0;
+}
+.imageContainer{
+    max-width: 15rem;
+    max-height: 20rem;
+    margin:0 auto;
+}
+.imageContainer >img{
+    height: 100%;
+    width:100%;
+    object-fit: fill;
+    border-radius: 10px;
+}
+.storyTitle{
+    font-size:large;
+    font-weight: bold;
+}
+.metaContainer{
+    display:grid;
+    grid-auto-flow: row;
+    margin: 0 1rem;
+}
+.infoName{
+    margin:0.2rem;
+}
+.infoValue{
+    display: grid;
+    justify-content: center;
+    margin:0.2rem;
+}
+
+.descContainer{
+    margin:1rem;
+    text-align: justify;
+}
+.pageDivider{
+    display:grid;
+    grid-template-columns: 20% 80%;
+}
+.siteButton{
+    display:flex;
+    border:2px solid var(--buttonBord);
+    border-radius: 20px;
+    background-color: var(--buttonBcg);
+    color: var(--textColor);
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+.siteButton:hover{
+    background-color: var(--buttonBord);
+    color: var(--textColor);
+}
+.midSizeButton{
+    height:3rem;
+    width:15rem;
+}
+.mediumMidSizeButton{
+    height:3.5rem;
+    width:30rem;
+}
+.controlButton{
+    height:2rem;
+    width:10rem;
+}
+
+.separator{
+    height: 1px;
+    width:90%;
+    border-top: 2px solid black;
+    margin: 0 auto;
+}
+.chapterElement{
+    display:grid;
+    grid-template-columns: 5% 90% 5%;
+    height:5rem;
+    background-color: var(--elementBcg);
+}
+.chapterElementContainer{
+    display:grid;
+    grid-auto-flow: row;
+    color:black !important;
+}
+.chapterElementContainer:hover{
+    color: black !important;
+}
+.chapterElementMiddleContainer{
+    display:grid;
+    grid-auto-flow: row;
+
+}
+.chapterElementUpper{
+    display:flex;
+    justify-content: space-between;
+    margin: auto 2rem;
+}
+.chapterElementLower{
+    display:grid;
+    grid-template-columns: repeat(3,30%) 5% 5%;
+    margin:0 2rem;
+    align-items: center;
+}
+
+
+/*
+|------------------------------------------------------|
+|                                                      |
+|                   SIDENAV                            |
+|                                                      |
+|------------------------------------------------------|
+*/
+
+.sideNavContainer{
+    display:grid;
+    position: sticky;
+    grid-auto-flow: row;
+    align-items: baseline;
+}
+.navButton{
+    justify-content: center;
+    align-items: center;
+    color:white;
+    text-decoration: none;
+    background-color: var(--navBcgColor);
+}
+.navButton:hover{
+    color:white;
+}
+.sideNavButton{
+    display:grid;
+    width: 100%;
+    line-height: 5rem;
+    border-top: 1px solid white;
+    font-size: x-large;
+}
+.sideNavButton:first-child{
+    border-top: none;
+}
+.userName{
+    color:black !important;
+    margin:auto;
+}
+.userName:hover{
+    color:black !important;
+}
+
+
+
+
+
+.pageContentContainer{
+    display:grid;
+    grid-auto-flow: row;
+    align-items: baseline;
+}
+.containerTitle{
+    font-size: x-large;
+    font-weight: bold;
+    margin: .5rem 0;
+}

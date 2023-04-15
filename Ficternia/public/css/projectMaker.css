@@ -1,0 +1,13 @@
+.gridContainer{
+    display:grid;
+    gap:2em;
+    padding-inline: 6.5vw;
+    width:85vw;
+}
+.formInput{
+    width:20vw;
+    height:50px;
+}
+.formInputElement{
+    width:60vw;
+}

@@ -1,0 +1,19 @@
+.gridListContainer{
+  display:grid;
+  grid-template-columns: repeat(3, calc(100%/3)) !important;
+}
+.objectCard{
+  display:grid;
+  grid-template-columns: 90% 10%;
+  width:35rem !important;
+  height:15rem !important;
+}
+.titleDescContiner{
+  padding: 1rem;
+}
+.titleContainer{
+  height: 2rem !important;
+}
+.descriptionContainer{
+  overflow:hidden;
+}

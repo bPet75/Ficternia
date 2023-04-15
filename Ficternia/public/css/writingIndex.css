@@ -1,0 +1,90 @@
+.hide{
+    display:none !important;
+}
+
+
+
+
+.storyStuffContainer{
+    display:grid;
+    grid-auto-flow: row;
+}
+.newChapterButtonContainer{
+    height:5rem;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.controlButtonsContainer{
+    display:grid;
+    grid-template-columns: 10% 80% 10%;
+    height: 5rem;
+}
+.controlButtonsInnerContainer{
+    display:grid;
+    grid-auto-flow: column;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    gap: 1rem;
+    margin:auto;
+}
+.publicityButtonContainer{
+    grid-column-start:1;
+    grid-column-end: 3;
+}
+.chapterListContainer{
+    display:grid;
+    min-height: 35rem;
+
+}
+.chapterListInner{
+    margin: 0 2rem;
+    height:100%;
+}
+.commentChecker{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+.commentChecker > input{
+    width: 2rem;
+    height: 2rem;
+}
+.chapterElementGrabberContainer{
+    display:grid;
+    margin: auto;
+    font-size: large;
+}
+.nonDraggable{
+    cursor:auto;
+}
+.draggable{
+    cursor: move;
+}
+.draggable.dragging{
+    opacity: .5;
+}
+
+
+
+
+
+
+
+/*
+|--------------------------------------------
+|           
+|PUBLIC SITE PART
+|
+|--------------------------------------------
+*/
+.subscribeButtonContainer{
+    display:grid;
+    margin:1rem;
+    align-items: center;
+    justify-content: center;
+}
+.readPage{
+    cursor:pointer;
+}

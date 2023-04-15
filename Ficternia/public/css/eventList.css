@@ -1,0 +1,18 @@
+.horizontalCard{
+    height: 16rem !important;
+}
+.chapterEvent{
+    background-color: rgb(209, 105, 105) !important;
+    border-color: rgb(130, 56, 56) !important;
+}
+.defaultEvent{
+    background-color: rgb(122, 152, 179) !important;
+    border-color: rgb(77, 94, 109) !important;
+}
+.statusEvent{
+    background-color: rgb(133, 179, 122) !important;
+    border-color: rgb(70, 92, 64) !important;
+}
+.objectDescription{
+    -webkit-line-clamp: 4 !important;
+}

@@ -1,0 +1,88 @@
+.splitPageContainer{
+    grid-template-columns: 20% 60% 19% !important;
+}
+.storyListContainers{
+    padding:0 2rem;
+}
+.infoContainer{
+    max-height:800px;
+    min-height: 850px;
+}
+.myWorks{
+    display:grid;
+    grid-template-columns: repeat(2,50%);
+    gap:.5rem;
+    padding:.5rem;
+}
+.wideStoryContainer{
+    display:grid;
+    grid-template-columns: 30% 69%;
+    border: 2px solid black;
+    border-radius: 8px;
+    width:98%;
+    height:15rem;
+    padding:.5rem;
+    gap:0.5rem;
+}
+.imageContainer > img{
+    border-radius: none !important;
+}
+.storyInfoContainer{
+    display:grid;
+    grid-auto-flow: row;
+    align-items: baseline;
+}
+.storyTitle{
+    height:2rem;
+    padding-left: 2rem;
+    font-weight: bold;
+    font-size: larger;
+}
+.storyInfo{
+    height:2rem;
+}
+.smallContainer{
+    display:grid;
+    grid-template-columns: repeat(2,50%);
+}
+.descContainer{
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow:hidden;
+}
+.moreContainer{
+    display:grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.moreButton{
+
+}
+
+
+
+
+
+.otherUsersContainer{
+    display:grid;
+    grid-auto-flow: row;
+    align-items: start;
+}
+.imageAndMetaContainer{
+    grid-template-columns: 100% !important;
+    align-items: baseline ;
+}
+.imageAndMetaContainer
+.imageContainer{
+    height:200px;
+}
+.metaContainer{
+    height:100%;
+}
+.imageContainer
+.userImage{
+    height:200px;
+    width:200px;
+    border-radius: 50%;
+}

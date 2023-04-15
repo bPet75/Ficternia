@@ -1,0 +1,100 @@
+/*----------------NAVBAR----------------------*/
+.subNavContainer{
+    display:flex;
+    padding:0 auto;
+    height:6dvh;
+    justify-content: center;
+    margin-bottom: 1rem;
+    background-color: var(--subNavBcgColor);
+}
+.subNavButton{
+    display:grid;
+    width:15rem;
+    background-color: inherit !important;
+}
+.subNavButton.active{
+    border-bottom:10px solid white;
+}
+.gridCenterText{
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*-----------------LISTER----------------------*/
+.listerContainer{
+    margin-top: 1rem;
+}
+.gridListContainer{
+    display:grid;
+    grid-template-columns: repeat(4, 25%);
+}
+.newButtonContainer{
+    display:grid;
+    justify-content: center;
+}
+.newButtonContainer > .siteButton{
+    border-radius: 0 !important;
+    background-color: #303030;
+}
+
+.objectCard{
+    height: 30rem;
+    width:20rem;
+    border-radius: 10px;
+    margin: 1.5rem auto;
+    background-color: var(--cardBackground);
+}
+
+.objectControlButtonContainer{
+    display:grid;
+    grid-template-columns: repeat(3, calc(100%/3));
+    height: 2.5rem;
+}
+.objectControlButtonContainer.forDraft{
+    grid-template-columns: repeat(4,25%);
+}
+.objectHolder{
+    display:grid;
+    
+}
+.objectInfoHolder{
+    display:grid;
+}
+.twoObjectInfo{
+    display:flex;
+    margin-block: 1rem;
+    justify-content: space-evenly;
+}
+.objectControlButton{
+    display:grid;
+    color:white;
+    text-decoration: none;
+}
+.objectControlButton:hover{
+    color:white;
+}
+.objectModalButton{
+    background-color: #393969;
+    border-top-left-radius: 10px;
+    
+}
+.updateButton{
+    background-color: rgb(141, 106, 41);
+}
+.objectRemoveButton{
+    background-color: rgb(89, 38, 38);
+    border-top-right-radius: 10px;
+}
+.connectionsButton{
+    background-color: rgb(0, 21, 255);
+}
+.forDraft > .objectControlButton{
+    border-radius: 0 !important;
+}
+.forDraft > .objectModalButton{
+    border-top-left-radius: 10px !important;
+}
+.forDraft > .objectRemoveButton{
+    border-top-right-radius: 10px !important;
+}

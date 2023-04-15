@@ -1,0 +1,6 @@
+.horizontalCard{
+    height: 10rem !important;
+}
+.objectDescription{
+    -webkit-line-clamp: 4 !important;
+}

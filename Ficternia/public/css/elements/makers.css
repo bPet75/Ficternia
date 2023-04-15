@@ -1,0 +1,53 @@
+.titleInput{
+    background-color: inherit;
+    color: var(--textColor);
+    border:none;
+    text-align: center;
+}
+.titleInput:focus{
+    outline: none;
+}
+.bigInputContainer{
+    width:60%;
+    justify-self:center;
+}
+.inputName{
+    font-size: x-large;
+    font-weight: bold;
+    margin-block:1rem;
+    color: var(--textColor);
+}
+.buttonContainer{
+    display:grid;
+    margin-block: 2rem;
+    justify-content: center;
+}
+.siteButton{
+    border-radius: 0 !important;
+    margin-inline: auto;
+}
+.imageContainer .siteButton img{
+    max-width: 15rem;
+    max-height: 21rem;
+    object-fit: fill;
+    
+}
+.objectInputContainer{
+    display:grid;
+    width:60%;
+    grid-template-columns: 65% 30%;
+    margin-inline: auto;
+}
+.selectorContainer{
+    display:grid;
+    width:80%;
+}
+.inputContainer{
+    
+}
+
+/*
+
+-----------------CHARACTER SPECIFIC------------------------
+
+*/

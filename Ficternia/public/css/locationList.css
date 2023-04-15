@@ -1,0 +1,11 @@
+.imageContainer{
+    max-width: 20rem !important;
+    margin: 0px !important;
+}
+.imageContainer > img{
+    height:auto !important;
+    border-radius: 0 !important;
+}
+.objectDescription{
+    -webkit-line-clamp: 5 !important;
+}

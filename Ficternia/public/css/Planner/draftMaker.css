@@ -1,0 +1,20 @@
+.gridContainer{
+    display:grid;
+    gap:2em;
+    padding-inline: 6.5vw;
+    width:85vw;
+}
+.hide{
+    display:none;
+}
+.formInput{
+    width:20vw;
+    height:50px;
+}
+.formInputElement{
+    width:60vw;
+}
+.draftEventCollapse{
+    display:grid;
+    grid-template-columns: repeat(2,50%);
+}

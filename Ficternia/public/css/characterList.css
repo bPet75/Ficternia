@@ -1,0 +1,17 @@
+.gridContainer{
+    grid-template-columns: repeat(2, 0.43fr);
+    padding-inline: 10vw;
+}
+.characterHolder{
+    grid-template-columns: 40% 60%;
+    height:250px;
+}
+.characterInfoRow{
+    display:grid;
+    grid-template-columns: 40% 60%;
+    padding: 0.5em;
+    gap:1em;
+}
+.picture{
+    height:248px;
+}

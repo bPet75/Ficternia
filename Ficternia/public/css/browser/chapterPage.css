@@ -1,0 +1,268 @@
+.pageContainer{
+    display:grid;
+    grid-auto-flow: row;
+    min-width: 95%;
+    margin: auto;
+    outline: 5px double red;
+    min-height:80vh;
+}
+.pageHeader{
+    display:grid;
+    outline: 5px dotted yellow;
+    margin: 1vh 0.5vw;
+    height: 5rem;
+    justify-content: center;
+    align-content: center;
+    font-size:xx-large;
+    font-weight: 500;
+}
+.contentContainer{
+    outline: 5px dashed purple;
+    margin: 1vh 0.5vw;
+    display:grid;
+    grid-template-columns: 20% 60% 20%;
+    min-height:50rem;
+}
+.contentSide{
+    outline: 5px groove blue;
+    margin: 1vh 0.5vw;
+}
+.adminButton{
+    display:grid;
+    line-height:3rem;
+    justify-content: center;
+    align-items: center;
+}
+.chapterContent{
+    outline: 5px double darkgoldenrod;
+    margin: 1vh 0.5vw;
+    padding:3rem;
+    background-color: var(--elementBcg);
+    border-radius: 15px;
+}
+.chapterContentAdmin{
+    padding-top:0;
+}
+.pageFooter{
+    outline: 5px dotted yellow;
+    margin: 1vh 0.5vw;
+    min-height:10rem;
+}
+.GroupNav{
+    display:flex;
+    position:relative;
+    list-style: none;
+    width: 25%;
+    margin:0 auto;
+}
+.GroupNav > .groupNavElement{
+    width:100%;
+}
+
+.GroupNav > .groupNavElement > .navTab{
+    display:block;
+    padding: 2vh 0;
+    text-align: center;
+    border-top: 5px solid grey !important;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    border: none;
+}
+.GroupNav > .groupNavElement > .navTab.active{
+    border-top: 5px solid rgb(0, 0, 0) !important;
+}
+.commentInputContainer{
+    display:grid;
+    justify-content: center;
+    margin: 1rem 0;
+}
+.commentInputContainer{
+    display:grid;
+    grid-auto-flow: row;
+}
+.ratingAndButtonContainer{
+    display:grid;
+    grid-template-columns: repeat(2,50%);
+}
+.buttonContainer{
+    display:grid;
+    margin: 0 auto;
+    align-items: center;
+}
+.buttonContainer > button{
+    width: 20rem;
+    height:3rem;
+    border:none;
+    border-radius: 25px;
+    font-size: large;
+    font-weight: 600;
+    background-color: #6c757d;
+    color:white;
+    margin: 0 auto;
+}
+.buttonContainer > button:hover{
+    background-color: #575e63;
+}
+
+
+
+.ratedStars{
+    --s:20px !important;
+}
+.stars {
+    --s:50px;
+    position:relative;
+    display:inline-flex;
+    width:calc(5*var(--s));
+    margin: 1rem auto;
+  }
+  .stars input {
+    width:var(--s);
+    height:var(--s);
+    margin:0;
+    opacity:0;
+    cursor:pointer;
+  }
+  .stars i {
+    position:absolute;
+    inset:0 0 calc(var(--s)*0.1);
+    pointer-events:none;
+    --v1:transparent,#000 0.5deg 108deg,#0000 109deg;
+    --v2:transparent,#000 0.5deg  36deg,#0000  37deg;
+    -webkit-mask:
+      conic-gradient(from 54deg  at calc(var(--s)*0.68) calc(var(--s)*0.57),var(--v1)),
+      conic-gradient(from 90deg  at calc(var(--s)*0.02) calc(var(--s)*0.35),var(--v2)),
+      conic-gradient(from 126deg at calc(var(--s)*0.5)  calc(var(--s)*0.7) ,var(--v1)),
+      conic-gradient(from 162deg at calc(var(--s)*0.5)  0                  ,var(--v2));
+    -webkit-mask-size: var(--s) var(--s);
+    -webkit-mask-composite: xor,destination-over;
+    mask-composite: exclude,add;
+    background:
+      linear-gradient(rgba(255,0,0,var(--o,0.3)) 0 0),  
+      linear-gradient(gold                       0 0)
+      #ccc;
+    background-size:calc(var(--l,0)*var(--s)) 100%,calc(var(--p,0)*var(--s)) 100%;
+    background-repeat:no-repeat;
+  }
+  
+  .stars:focus-within {
+    outline:1px solid;
+  }
+  
+  input:active ~ i{--o:1}
+  
+  input:nth-of-type(1):checked ~ i {--p:1}
+  input:nth-of-type(2):checked ~ i {--p:2}
+  input:nth-of-type(3):checked ~ i {--p:3}
+  input:nth-of-type(4):checked ~ i {--p:4}
+  input:nth-of-type(5):checked ~ i {--p:5}
+  /*input:nth-of-type(N):checked ~ i {--p:N}*/
+  
+  input:nth-of-type(1):hover ~ i {--l:1}
+  input:nth-of-type(2):hover ~ i {--l:2}
+  input:nth-of-type(3):hover ~ i {--l:3}
+  input:nth-of-type(4):hover ~ i {--l:4}
+  input:nth-of-type(5):hover ~ i {--l:5}
+  /*input:nth-of-type(N):hover ~ i {--l:N}*/
+
+
+
+.commentContainer{
+    display:grid;
+    grid-auto-flow: row;
+    margin: 1rem auto;
+    min-height:5rem;
+    outline: 2px solid green;
+    
+}
+
+.comment{
+    display:grid;
+    min-width:35vw;
+    border-radius: 25px;
+    background-color: rgb(252, 252, 252);
+    margin: 0.7rem 0;
+}
+.commentHead{
+    display:grid;
+    grid-auto-flow: column;
+    margin:0.5rem 2rem;
+    border-bottom: 2px solid black;
+}
+.deleteButton{
+    border:none;
+    background-color: inherit;
+    justify-content: right;
+}
+.rating{
+    display:grid;
+    margin-top:-1rem;
+}
+.commentWriter{
+    
+}
+.commentTime{
+    display:grid;
+    justify-content: right;
+}
+.commentBody{
+    margin: 0.5rem 2rem;
+}
+.commentFooter{
+    display:grid;
+    margin: 0.25rem 2rem 0.5rem; 
+    justify-content: right;
+}
+
+.replyButton{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid black;
+    border-radius: 40px;
+    width:5rem;
+    height: 3rem;
+    color:white;
+    background-color: #6c757d;
+    text-decoration: none;
+}
+.replyButton:hover{
+    background-color: #575e63;
+    color:white;
+}
+.replyForm{
+    display:grid;
+    margin: 0.3rem 2rem;
+}
+.textAreaContainer{
+    width: 100%;
+}
+.textAreaContainer > textarea{
+    width:100%;
+}
+.replyButtonsContainer{
+    display:flex;
+    justify-content: right;
+    gap:0 1rem;
+    margin: 0.3rem 2rem;
+}
+.replyControlButtons{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid black;
+    border-radius: 40px;
+    width:5rem;
+    height: 2rem;
+    color:white;
+    background-color: #6c757d;
+    text-decoration: none;
+}
+.replyControlButtons:hover{
+    background-color: #575e63;
+    color:white;
+}
+.children{
+    margin-left: 50px;
+}

@@ -1,0 +1,95 @@
+.hide{
+    display:none;
+}
+.formContent{
+    display:grid;
+    grid-auto-flow: row;
+
+}
+.contentContainer{
+    display:grid;
+    grid-template-columns: 25% 50% 25%;
+    min-width: 95vw;
+}
+.draftContainer{
+    width: 100%;
+}
+.draftInfoContainer{
+    display:grid;
+    grid-auto-flow: row;
+    margin: 2vh 2vw;
+}
+.draftInfoContainer > label{
+    font-size:x-large;
+    font-weight: 500;
+}
+
+
+
+
+.writerContainer{
+    width: 100%;
+    padding: 0 1vw;
+}
+.chaperTitle{
+    display:grid;
+    grid-auto-flow: row;
+}
+.chapterTitle > label{
+    font-size: large;
+}
+.chapterTitle > input{
+    width: 90%;
+    margin: 1vh 2vw;
+}
+
+
+.objectContainers{
+    width: 100%;
+}
+.objectContainer{
+    display:grid;
+    line-height: 3rem;
+}
+.collapse{
+    line-height: 2rem;
+}
+.collapseButtons{
+    display:grid;
+    align-content: center;
+    justify-items: center;
+    border: 1px solid rgb(191, 191, 191);
+    color:inherit;
+    font-size: large;
+    font-weight: 500;
+    text-decoration: none;
+}
+.characterCollapseButtons{
+    display:grid;
+    align-content: center;
+    justify-items: center;
+    border: 1px solid rgb(120, 120, 120);
+    color:inherit;
+    font-size:larger;
+}
+.characterDescription{
+    line-height: 1rem;
+    padding: 2vw;
+}
+
+.bottomContent{
+    display:grid;
+    grid-auto-flow: row;
+    margin: 2vh auto;
+
+}
+.bottomContent > div >button{
+    width:15rem;
+    height: 3rem;
+}
+.noteCollapse{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow:hidden;
+}

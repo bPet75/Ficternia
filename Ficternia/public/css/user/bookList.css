@@ -1,0 +1,9 @@
+.bookListContainer{
+    display:grid;
+    grid-auto-flow: row;
+}
+.buttonContainer{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}

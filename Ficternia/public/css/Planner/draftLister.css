@@ -1,0 +1,6 @@
+.gridContainer{
+    grid-template-columns: repeat(3,33%);
+}
+.gridCardHeaderContainer{
+    grid-template-columns: 60% 40% !important;
+}

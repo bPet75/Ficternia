@@ -1,0 +1,72 @@
+.gridContainer{
+    display:grid;
+    gap:2em;
+    justify-content: center;
+}
+.gridContainer > .tab-pane > .tabContainer{
+    display:grid;
+    grid-template-columns: repeat(2,50%);
+    gap:2vw;
+}
+.hide{
+    display:none;
+}
+.questionElements{
+    margin: 6vh 0;
+}
+.newPropertyButton{
+    width:8vw;
+}
+.newPropModalBody{
+    display:grid;
+    gap:3vh;
+}
+.customProps{
+    display:grid;
+    grid-template-columns: repeat(2,50%);
+    gap:3vh;
+}
+.formInput{
+    width:30vw;
+    height:50px;
+}
+.formInputElement{
+    width:60vw;
+}
+.imageContainer{
+    width:20vw;
+    height:55vh;
+    border: 1px solid black;
+    margin-bottom:10px;
+}
+.characterFormElement:nth-child(4){
+    grid-column:2;
+    grid-row-start: 1;
+    grid-row-end:5;
+    margin: 0 auto;
+}
+.characterGroupNav{
+    display:flex;
+    position:relative;
+    list-style: none;
+    width: 75%;
+    margin:0 auto;
+    padding:2vh 0;
+}
+.characterGroupNav > .groupNavElement{
+    width:100%;
+}
+
+.characterGroupNav > .groupNavElement > .navTab{
+    display:block;
+    padding: 2vh 0;
+    text-align: center;
+    border-top: 5px solid grey !important;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    border: none;
+}
+.characterGroupNav > .groupNavElement > .navTab.active{
+    border-top: 5px solid rgb(0, 0, 0) !important;
+}

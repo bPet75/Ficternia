@@ -1,0 +1,29 @@
+.userPageContent{
+    outline: 2px dotted red;
+    margin: 1rem;
+    min-height: 80dvh;
+
+}
+.infoWithImageContainer{
+    display:grid;
+    grid-template-columns: 34% 34% 30%;
+    gap: 1rem;
+}
+.firstCol{
+    outline:2px dotted blue;
+    display:grid;
+}
+.secondCol{
+    outline: 2px dotted green;
+    display:grid;
+}
+.imageCol{
+    outline: 2px dotted orange;
+}
+.textBoxContainer{
+    display:grid;
+}
+.userInfoContainer{
+    display:grid;
+    gap:auto;
+}

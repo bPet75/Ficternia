@@ -1,0 +1,39 @@
+.gridContainer{
+    grid-template-columns: repeat(3, 0.38fr);
+    padding-inline: 6.5vw;
+}
+.storyHolder{
+    grid-template-columns: 60% 40%;
+}
+.pictureHolder{
+    height:300px;
+}
+.card-header{
+    text-align: center;
+    font-size: large;
+    font-style: bold;
+}
+.card{
+    width:23vw;
+    
+}
+.storyInfoRow{
+    display:grid;
+    padding: 0.5em;
+    gap:1em;
+}
+.descRow{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.addStory{
+  min-height:520px !important;
+}
+.picture{
+  height:300px;
+}
+
+.imageContainer{
+    margin-top: 1rem !important;
+}

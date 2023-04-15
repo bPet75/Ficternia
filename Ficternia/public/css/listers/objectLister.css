@@ -1,0 +1,126 @@
+.horizontalListerContainer{
+    grid-template-columns: repeat(3,calc(100%/3)) !important;
+}
+.horizontalCard{
+    height: 20rem !important;
+    width: 35rem !important;
+    display:grid;
+    grid-template-columns: 90% 10%;
+}
+.horizontalCard.forDraft{
+    grid-template-columns: 100%;
+    grid-auto-flow: row;
+    height: 13rem !important;
+}
+.horizontalCard.forNote{
+    height:10rem !important;
+}
+.objectDescription.forNote{
+    padding: 1rem;
+}
+.objectControlButtonContainer.horizontal{
+    height:100% !important;
+    grid-template-columns: 100% !important;
+    grid-template-rows: repeat(3, calc(100%/3));
+  }
+  .objectModalButton.horizontal{
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 10px !important;
+  }
+  .objectRemoveButton.horizontal{
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 10px !important;
+  }
+.collection > .objectRemoveButton{
+    border-top-right-radius: 10px !important;
+}
+.objectControlButtonContainer.collection{
+    grid-template-columns: repeat(2, 50%);
+}
+  .objectHolder.horizontal{
+    grid-template-columns: 40% 60% !important;
+  }
+.imageContainer.characterImage{
+    margin:0 !important;
+   
+}
+.characterImage .picture{
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.objectInfoHolder.horizontal{
+    grid-auto-flow: row;
+    height: fit-content;
+}
+.objectName{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    max-height:2rem;
+    margin-block: .5rem;
+    
+}
+
+.descriptionRow{
+    margin-inline: 1rem;
+    min-height: 5.5rem;
+}
+.objectDescription{
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow:hidden;
+}
+
+.descRow{
+    grid-template-columns: 100% !important;
+}
+
+.checkBoxContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    gap: .5rem;
+}
+.eventCheckbox{
+    width:2rem;
+    height:2rem;
+}
+
+
+/* -------------------------------Collections----------------------------*/
+.collectionContainer{
+    display:grid;
+    grid-auto-flow: row;
+    margin-top: 2rem;
+    gap: 3rem;
+}
+.collectionBar{
+    display:grid;
+    grid-template-columns: 85% 15%;
+    background-color: var(--collectionColor);
+    max-width: 100rem;
+    min-width: 80rem;
+    margin-inline: auto;
+    border-radius: 10px;
+}
+
+.draftCardInCollection{
+    display:grid;
+    grid-template-columns: repeat(5,20%);
+    max-width: 90rem;
+    min-width: 75rem;
+    margin-inline: auto;
+    gap:3rem;
+}
+.draftCard{
+    display:inline-block;
+    text-align: center;
+    vertical-align: middle;
+    font-size:large;
+    line-height: 5rem;
+    border: 2px solid var(--buttonBord);
+    background-color: var(--cardBackground);
+}
