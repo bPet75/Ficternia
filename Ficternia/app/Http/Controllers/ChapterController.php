@@ -53,11 +53,13 @@ class ChapterController extends ConnectionController
         ReadingStatusController::SetStatusToAlert($storyId);
         $drafts = parent::_getRelatedContent(Story::class, $storyId, "draft");
         $max_serial = 0;
+        $e = [];
         foreach ($drafts as $value) {
             $item = parent::_get(Chapter::class, ['draft_id' => $value->id], onlyColumns:['id', 'serial']);
+            array_push($e, $item);
             if(count($item) != 0){
                 if($item[0]->serial > $max_serial){
-                    $max_serial = $item[0]->serial > $max_serial;
+                    $max_serial = $item[0]->serial;
                 }
             }
             

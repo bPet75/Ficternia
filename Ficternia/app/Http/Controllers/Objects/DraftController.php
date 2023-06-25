@@ -109,7 +109,7 @@ class DraftController extends ConnectionController
             
         }
         $inStories = [$storyId];
-        $last_serial = parent::_getRelatedContent(Story::class, $storyId, "draft", orderBy:"serial");
+        $last_serial = parent::_getRelatedContent(Story::class, $storyId, "draft", orderBy:"serial", sort: "desc");
         if($last_serial != []){
             $last_serial = $last_serial[0]->serial;
         }

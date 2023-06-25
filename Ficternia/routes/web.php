@@ -146,7 +146,7 @@ Route::get('/Writing/{projId}/{storyId}/', [StoryController::class, 'getAllDraft
 Route::Post('/Writing/{projId}/{storyId}/', [ChapterController::class, 'chapterModifySwitch'])->name('operation')->middleware('auth')->middleware('lang');
 Route::Post('/Writing/{projId}/{storyId}/visibility', [StoryController::class, 'ChangeVisibility'])->name('changeStoryVisibility')->middleware('auth')->middleware('lang');
 
-Route::get('/Writing/{projId}/{storyId}/{onlyparts}/{id}', [ChapterController::class, 'createChapter'])->name('writeChapter')->middleware('auth')->middleware('lang');
+Route::get('/Writing/{projId}/{storyId}/{id}', [ChapterController::class, 'createChapter'])->name('writeChapter')->middleware('auth')->middleware('lang');
 Route::Post('/Writing/{projId}/{storyId}/{id}', [ChapterController::class, 'store'])->name('saveChapter')->middleware('auth')->middleware('lang');
 Route::get('/Writing/{projId}/{storyId}/Update/{id}', [ChapterController::class, 'GetChapterForUpdate'])->name('getChapterForUpdate')->middleware('auth')->middleware('lang');
 Route::Post('/Writing/{projId}/{storyId}/Update/{id}', [ChapterController::class, 'update'])->name('updateChapter')->middleware('auth')->middleware('lang');

@@ -300,6 +300,11 @@ class ConnectionController extends Controller
                         $data[$i+1] = $data[$i];
                         $data[$i] = $x;
                     }
+                    if($data[$i]->$orderBy < $data[$i+1]->$orderBy && !$swap){
+                        $x = $data[$i+1];
+                        $data[$i+1] = $data[$i];
+                        $data[$i] = $x;
+                    }
                 }
                 
             }

@@ -118,7 +118,7 @@
         <div class="modal-body draftContainer">
             @foreach ($data->drafts as $draft)
                 @if (!$draft->have_chapter)
-                    <a href="{{route("writeChapter", ["projId" => $data["projId"], "storyId" => $data["storyId"], "id"=>$draft->id, "onlyparts"=>true])}}" class="draft">{{$draft->title}}</a>
+                    <a href="{{route("writeChapter", ["projId" => $data["projId"], "storyId" => $data["storyId"], "id"=>$draft->id])}}" class="draft">{{$draft->title}}</a>
                     <div class="horizLine"></div>
                 @endif
             @endforeach
